@@ -1,0 +1,10 @@
+{
+  "user": {
+    "_id": "6547b8f123456789abcdef11",
+    "username": "testuser",
+    "email": "test@example.com",
+    "role": "developer",
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NDdiOGYxMjM0NTY3ODlhYmNkZWYxMSIsInVzZXJuYW1lIjoidGVzdHVzZXIiLCJpYXQiOjE2OTkxOTQ2NjAsImV4cCI6MTY5OTI4MTA2MH0.test_token_signature"
+}

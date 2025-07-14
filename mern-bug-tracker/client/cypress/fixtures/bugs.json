@@ -1,0 +1,73 @@
+[
+  {
+    "_id": "6547b8f123456789abcdef01",
+    "title": "Login button not working",
+    "description": "The login button doesn't respond when clicked on mobile devices",
+    "severity": "high",
+    "priority": "high",
+    "status": "open",
+    "category": "frontend",
+    "assignedTo": null,
+    "reporter": {
+      "_id": "6547b8f123456789abcdef11",
+      "username": "testuser",
+      "email": "test@example.com"
+    },
+    "comments": [],
+    "createdAt": "2024-01-15T10:30:00.000Z",
+    "updatedAt": "2024-01-15T10:30:00.000Z"
+  },
+  {
+    "_id": "6547b8f123456789abcdef02",
+    "title": "Database connection timeout",
+    "description": "Random database timeouts occurring during peak hours",
+    "severity": "critical",
+    "priority": "high",
+    "status": "in-progress",
+    "category": "backend",
+    "assignedTo": {
+      "_id": "6547b8f123456789abcdef12",
+      "username": "developer1",
+      "email": "dev1@example.com"
+    },
+    "reporter": {
+      "_id": "6547b8f123456789abcdef11",
+      "username": "testuser",
+      "email": "test@example.com"
+    },
+    "comments": [
+      {
+        "author": {
+          "_id": "6547b8f123456789abcdef12",
+          "username": "developer1"
+        },
+        "content": "Investigating the connection pool settings",
+        "createdAt": "2024-01-15T11:00:00.000Z"
+      }
+    ],
+    "createdAt": "2024-01-15T09:15:00.000Z",
+    "updatedAt": "2024-01-15T11:00:00.000Z"
+  },
+  {
+    "_id": "6547b8f123456789abcdef03",
+    "title": "UI layout breaks on Safari",
+    "description": "The main dashboard layout is misaligned on Safari browser",
+    "severity": "medium",
+    "priority": "medium",
+    "status": "resolved",
+    "category": "frontend",
+    "assignedTo": {
+      "_id": "6547b8f123456789abcdef13",
+      "username": "frontend_dev",
+      "email": "frontend@example.com"
+    },
+    "reporter": {
+      "_id": "6547b8f123456789abcdef14",
+      "username": "tester1",
+      "email": "tester1@example.com"
+    },
+    "comments": [],
+    "createdAt": "2024-01-14T14:20:00.000Z",
+    "updatedAt": "2024-01-15T16:45:00.000Z"
+  }
+]

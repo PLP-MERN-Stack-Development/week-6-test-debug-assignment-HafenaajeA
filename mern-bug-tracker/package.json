@@ -1,0 +1,64 @@
+{
+  "name": "mern-bug-tracker",
+  "version": "1.0.0",
+  "description": "A comprehensive bug tracker application built with MERN stack for testing and debugging practice",
+  "main": "index.js",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install-all": "npm install && npm run install:client && npm run install:server",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "test": "npm run test:server && npm run test:client",
+    "test:server": "cd server && npm test",
+    "test:client": "cd client && npm test",
+    "test:unit": "npm run test:server:unit && npm run test:client:unit",
+    "test:server:unit": "cd server && npm run test:unit",
+    "test:client:unit": "cd client && npm run test:unit",
+    "test:integration": "npm run test:server:integration && npm run test:client:integration",
+    "test:server:integration": "cd server && npm run test:integration",
+    "test:client:integration": "cd client && npm run test:integration",
+    "test:e2e": "cd client && npm run test:e2e",
+    "test:e2e:open": "cd client && npm run test:e2e:open",
+    "test:coverage": "npm run test:server:coverage && npm run test:client:coverage",
+    "test:server:coverage": "cd server && npm run test:coverage",
+    "test:client:coverage": "cd client && npm run test:coverage",
+    "test:watch": "concurrently \"npm run test:server:watch\" \"npm run test:client:watch\"",
+    "test:server:watch": "cd server && npm run test:watch",
+    "test:client:watch": "cd client && npm run test:watch",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "setup-test-db": "cd server && npm run setup-test-db",
+    "lint": "npm run lint:server && npm run lint:client",
+    "lint:server": "cd server && npm run lint",
+    "lint:client": "cd client && npm run lint",
+    "lint:fix": "npm run lint:server:fix && npm run lint:client:fix",
+    "lint:server:fix": "cd server && npm run lint:fix",
+    "lint:client:fix": "cd client && npm run lint:fix"
+  },
+  "keywords": [
+    "mern",
+    "bug-tracker",
+    "testing",
+    "debugging",
+    "react",
+    "express",
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "MERN Bug Tracker Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
